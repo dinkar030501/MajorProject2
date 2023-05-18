@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+nav {
+  background-color: #333;
+  height: 100vh;
+  position: fixed;
+  width: 200px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 1em 0;
+}
+
+nav a {
+  color: #fff;
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+}
+
+main {
+  margin-left: 200px;
+  padding: 1em;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 1em;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+#chartContainer {
+  width: 800px;
+  height: 400px;
+  margin: 0 auto;
+}
+#chart {
+  width: 100%;
+  height: 100%;
+}
+.tooltip {
+  position: absolute;
+  display: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+input,
+select,
+label,
+button {
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+}
+.addEmployees {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: flex-start;
+  margin-top: 30px;
+  border: 2px dashed #ccc;
+}

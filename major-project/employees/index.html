@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Employee Data</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="/productivity/index.html">Productivity</a></li>
+        <li><a href="/employees/index.html">Employees</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Employee Data</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>EMP ID</th>
+            <th>Name</th>
+            <th>Sex</th>
+            <th>Age</th>
+            <th>Department</th>
+            <th>Role</th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+      <!-- write html code to add employee through input fields -->
+      <div class="addEmployees">
+        <label for="empId">empId</label>
+        <input type="number" id="empId" placeholder="empId" />
+        <label for="name">name</label>
+        <input type="text" id="name" placeholder="name" />
+        <label for="sex">Gender</label>
+        <select name="Gender" id="Gender">
+          <option value="M">Male</option>
+          <option value="F">Female</option>
+        </select>
+        <label for="age">Age</label>
+        <input type="number" id="age" placeholder="age" />
+        <label for="department">Department</label>
+        <select name="department" id="department">
+          <option value="Leadership">Leadership</option>
+          <option value="Product">Product</option>
+          <option value="Marketing">Marketing</option>
+          <option value="Tech">Tech</option>
+          <option value="Business Development">Business Development</option>
+          <option value="HR">HR</option>
+        </select>
+        <label for="role">Role</label>
+        <select name="role" id="role">
+          <option value="Manager">Manager</option>
+          <option value="Engineer">Engineer</option>
+          <option value="Designer">Designer</option>
+          <option value="Sales">Sales</option>
+          <option value="HR">HR</option>
+        </select>
+        <button onclick="addEmployee()">Add Employee</button>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
